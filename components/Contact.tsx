@@ -30,8 +30,23 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formState);
-    alert('Thank you for your message! We will get back to you soon.');
+    
+    // Construct the email details
+    const subject = `New Message from ${formState.name} (SLRiseHub Website)`;
+    const body = `Name: ${formState.name}
+Email: ${formState.email}
+District: ${formState.district}
+
+Message:
+${formState.message}`;
+
+    // Create the mailto link
+    const mailtoLink = `mailto:slrisehub@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Open the user's email client
+    window.location.href = mailtoLink;
+    
+    // Reset the form
     setFormState({ name: '', email: '', district: '', message: '' });
   };
 
@@ -172,7 +187,7 @@ const Contact: React.FC = () => {
                   className="w-full md:w-auto bg-brand-royal text-white font-bold py-3 px-8 rounded-lg hover:bg-brand-dark transition-colors flex items-center justify-center shadow-md"
                 >
                   <Send className="w-5 h-5 mr-2" />
-                  Send Message
+                  Send Message via Email
                 </button>
               </form>
             </div>
