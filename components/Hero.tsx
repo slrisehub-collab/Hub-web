@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
           <a 
-            href="#partners" 
+            href="mailto:slrisehub@gmail.com?subject=Partnership Inquiry" 
             className="flex items-center justify-center bg-transparent border-2 border-white text-white font-semibold py-3 px-8 rounded-full hover:bg-white hover:text-brand-royal transition-all duration-300"
           >
             <Handshake className="mr-2 w-5 h-5" />
