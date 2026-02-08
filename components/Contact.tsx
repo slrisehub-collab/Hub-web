@@ -16,8 +16,8 @@ const SIERRA_LEONE_DISTRICTS = [
   "Port Loko District",
   "Pujehun District",
   "Tonkolili District",
-  "Western Area Rural",
-  "Western Area Urban"
+  "Western Area Rural (Waterloo)",
+  "Western Area Urban (Freetown)"
 ];
 
 const Contact: React.FC = () => {

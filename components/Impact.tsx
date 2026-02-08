@@ -2,22 +2,22 @@ import React from 'react';
 import { Users, BookOpen, HandHeart, Map, PieChart, TrendingUp } from 'lucide-react';
 
 const DISTRICTS = [
-  { name: 'Western Area Urban', percent: 40 },
-  { name: 'Western Area Rural', percent: 15 },
+  { name: 'Western Area Urban (Freetown)', percent: 35 },
+  { name: 'Western Area Rural (Waterloo)', percent: 15 },
   { name: 'Bo District', percent: 8 },
-  { name: 'Bombali District', percent: 5 },
-  { name: 'Kenema District', percent: 5 },
-  { name: 'Port Loko District', percent: 4 },
-  { name: 'Kono District', percent: 3 },
+  { name: 'Bombali District', percent: 6 },
+  { name: 'Kenema District', percent: 6 },
+  { name: 'Port Loko District', percent: 5 },
+  { name: 'Kono District', percent: 4 },
   { name: 'Moyamba District', percent: 3 },
   { name: 'Kambia District', percent: 3 },
-  { name: 'Koinadugu District', percent: 2 },
-  { name: 'Kailahun District', percent: 2 },
+  { name: 'Koinadugu District', percent: 3 },
+  { name: 'Kailahun District', percent: 3 },
   { name: 'Pujehun District', percent: 2 },
   { name: 'Tonkolili District', percent: 2 },
   { name: 'Bonthe District', percent: 2 },
   { name: 'Falaba District', percent: 2 },
-  { name: 'Karene District', percent: 2 },
+  { name: 'Karene District', percent: 1 },
 ];
 
 const Impact: React.FC = () => {
@@ -114,7 +114,7 @@ const Impact: React.FC = () => {
               ))}
             </div>
             <p className="mt-6 text-xs text-gray-400 italic text-center">
-              * Active engagement across all districts
+              * Active engagement across all 16 districts
             </p>
           </div>
 
